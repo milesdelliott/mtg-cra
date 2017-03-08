@@ -1,0 +1,69 @@
+* {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  box-sizing: border-box;
+  list-style-type: none; }
+
+html, body, #root, .App {
+  height: 100vh;
+  width: 100vw;
+  position: absolute; }
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column; }
+
+.button {
+  padding: 0.25rem 1rem;
+  background: #ccc; }
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem; }
+  .player-life {
+    display: flex; }
+    .player-life-value {
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 0 1rem;
+      order: 2; }
+    .player-life-button-minus {
+      order: 1; }
+    .player-life-button-add {
+      order: 3; }
+
+.counters {
+  flex-basis: 4;
+  display: flex;
+  justify-content: space-between; }
+
+.modal {
+  background-color: #f2f2f2;
+  border: solid black 1px;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem; }
+  .modal-input {
+    border: inherit;
+    margin: 1rem;
+    padding: 1rem; }
+  .modal-button {
+    margin: 1rem; }
+  .modal--false {
+    display: none; }
+  .modal--true {
+    display: flex; }
